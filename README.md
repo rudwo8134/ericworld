@@ -14,3 +14,12 @@ Email: rudwo8134@gmail.com
  1. styled-components
  2. react-router-dom
  3. react-icons
+ 4. react-scroll
+
+
+----------------------------
+
+#### DAY 1 (2021, 10,07 thur)
+ 1. add the Navbar with react-scroll
+ 2. add the Footer with react-scroll
+ 3. add the layout!!(Done)
