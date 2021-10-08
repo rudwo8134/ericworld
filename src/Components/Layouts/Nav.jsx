@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import styled from 'styled-components';
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
 import { Link as ScrollLink } from 'react-scroll';
@@ -7,8 +7,27 @@ import { Linkdata } from './Linkdata';
 
 
 const Nav = () => {
+  const [Scrollon, setScrollon] = useState(false);
+
+  const handleScroll = () =>{
+    const scroll = window.scrollY
+
+    if(scroll > 10){
+      setScrollon(true);
+    }
+    else{
+      setScrollon(false);
+    }
+  }
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return ()=>{
+        window.removeEventListener('scroll', handleScroll);
+      }
+    }, []);
+
   return (
-    <Wrapper>
+    <Wrapper Scrollon={Scrollon}>
       <Innerlayouts>
         <Navstyle>
           <div className="logocontainer">
@@ -37,11 +56,16 @@ const Nav = () => {
 const Wrapper = styled.div`
   width: 100vw;
   height: 72px;
-  background: transparent;
+  background: ${({ Scrollon }) =>
+    Scrollon ? 'var( --Primary-color-regular)' : 'transparent'};
+  transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
-`
+  position: fixed;
+  top: 0;
+  z-index: 10;
+`;
 
 const Navstyle = styled.nav`
   width: 1300px;

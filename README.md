@@ -23,3 +23,4 @@ Email: rudwo8134@gmail.com
  1. add the Navbar with react-scroll
  2. add the Footer with react-scroll
  3. add the layout!!(Done)
+ 4. add the Hero page

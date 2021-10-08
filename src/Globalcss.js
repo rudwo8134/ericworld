@@ -7,6 +7,8 @@ const Globalcss = createGlobalStyle`
       --Primary-color-regular: #75E3EA;
       --Primary-color-light: #D5FAFC;
       --default-black:#0B0D17;
+      --Seconday-color:#F22BB2;
+      --Seconday-color-light:#FF72D2;
       --Black-900:#18191F;
       --Black-800:#474A57;
       --Black-700:#969BAB;
