@@ -21,7 +21,7 @@ const Hero = () => {
     <Herostyle>
       <div className="left">
         <div className="textcontainer">
-          <span className="Mainheader">WElCOME TO ERIC’s PORTFOLIO</span>
+          <span className="Mainheader">WElCOME TO ERIC’S PORTFOLIO</span>
           <span className="subheader">
             Eric is the Front end developer. and also he has a skills to design
             the website. he has lots of skills.{' '}

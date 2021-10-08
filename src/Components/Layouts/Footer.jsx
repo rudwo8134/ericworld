@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="divider"></div>
           <div className="copyrightcontainer">
             <span className="copyright">
-              © {new Date().getFullYear()} Landify UI Kit. All rights reserved
+              © {new Date().getFullYear()} Eric Shin. All rights reserved
             </span>
             <span className="linkcontainer">
               <BsFacebook />

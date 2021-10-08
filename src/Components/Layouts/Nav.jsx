@@ -29,7 +29,7 @@ const Nav = () => {
   return (
     <Wrapper Scrollon={Scrollon}>
       <Innerlayouts>
-        <Navstyle>
+        <Navstyle Scrollon={Scrollon}>
           <div className="logocontainer">
             <ScrollLink to="/">
               <img src={Logo} alt="logo" className="logo" />
@@ -97,11 +97,14 @@ const Navstyle = styled.nav`
           order: 0;
           flex-grow: 0;
           margin: 0px 10px;
+          text-transform: capitalize;
+          transition: all 0.3s ease-in-out;
         }
         :hover {
           transform: translateY(-3px) scale(1.2);
           .Linkdataname {
-            color: var(--Primary-color);
+            color: ${({ Scrollon }) =>
+              Scrollon ? 'white' : 'var(--Primary-color)'};
           }
         }
       }

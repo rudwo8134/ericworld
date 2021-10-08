@@ -24,3 +24,4 @@ Email: rudwo8134@gmail.com
  2. add the Footer with react-scroll
  3. add the layout!!(Done)
  4. add the Hero page
+ 5. add the intro page (not done due to meeting for Onroom)
