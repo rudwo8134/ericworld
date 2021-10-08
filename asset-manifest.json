@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.js": "/ericworld/static/js/main.a6e8097c.chunk.js",
-    "main.js.map": "/ericworld/static/js/main.a6e8097c.chunk.js.map",
+    "main.js": "/ericworld/static/js/main.a944866d.chunk.js",
+    "main.js.map": "/ericworld/static/js/main.a944866d.chunk.js.map",
     "runtime-main.js": "/ericworld/static/js/runtime-main.211e7571.js",
     "runtime-main.js.map": "/ericworld/static/js/runtime-main.211e7571.js.map",
-    "static/js/2.c8270a46.chunk.js": "/ericworld/static/js/2.c8270a46.chunk.js",
-    "static/js/2.c8270a46.chunk.js.map": "/ericworld/static/js/2.c8270a46.chunk.js.map",
+    "static/js/2.6e858eb2.chunk.js": "/ericworld/static/js/2.6e858eb2.chunk.js",
+    "static/js/2.6e858eb2.chunk.js.map": "/ericworld/static/js/2.6e858eb2.chunk.js.map",
     "index.html": "/ericworld/index.html",
-    "static/js/2.c8270a46.chunk.js.LICENSE.txt": "/ericworld/static/js/2.c8270a46.chunk.js.LICENSE.txt"
+    "static/js/2.6e858eb2.chunk.js.LICENSE.txt": "/ericworld/static/js/2.6e858eb2.chunk.js.LICENSE.txt",
+    "static/media/message_blue.3065b5d0.svg": "/ericworld/static/media/message_blue.3065b5d0.svg",
+    "static/media/message_pink.3b52b420.svg": "/ericworld/static/media/message_pink.3b52b420.svg",
+    "static/media/ring_orange-1.25b28ee1.svg": "/ericworld/static/media/ring_orange-1.25b28ee1.svg",
+    "static/media/user1.38444ace.png": "/ericworld/static/media/user1.38444ace.png",
+    "static/media/user2.48779346.png": "/ericworld/static/media/user2.48779346.png",
+    "static/media/user3.c57305b0.png": "/ericworld/static/media/user3.c57305b0.png",
+    "static/media/user4.de8589c4.png": "/ericworld/static/media/user4.de8589c4.png"
   },
   "entrypoints": [
     "static/js/runtime-main.211e7571.js",
-    "static/js/2.c8270a46.chunk.js",
-    "static/js/main.a6e8097c.chunk.js"
+    "static/js/2.6e858eb2.chunk.js",
+    "static/js/main.a944866d.chunk.js"
   ]
 }
