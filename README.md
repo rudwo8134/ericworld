@@ -25,3 +25,7 @@ Email: rudwo8134@gmail.com
  3. add the layout!!(Done)
  4. add the Hero page
  5. add the intro page (not done due to meeting for Onroom)
+
+
+#### DAY 2 (2021, 10,12 Tue)
+  1. add the Intro, Serveice page
