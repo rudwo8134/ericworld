@@ -31,6 +31,10 @@ const BoxWrapper = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media screen and (max-width: 768px) {
+      width: 150px;
+      height: 150px;
+    }
     h2 {
       font-weight: 800;
       font-size: 48px;
@@ -50,6 +54,9 @@ const BoxWrapper = styled.div`
       order: 0;
       flex-grow: 0;
       margin: 0px 0px;
+      @media screen and (max-width: 768px) {
+        font-size: 2.3rem;
+      }
     }
     span {
       font-size: 18px;
@@ -69,6 +76,9 @@ const BoxWrapper = styled.div`
       order: 1;
       flex-grow: 0;
       margin: 0px 0px;
+      @media screen and (max-width: 768px) {
+        font-size: 0.8rem;
+      }
     }
   }
 `;

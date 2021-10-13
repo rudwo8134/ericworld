@@ -178,10 +178,15 @@ const Herostyle = styled.section`
       position: absolute;
       top: 30%;
       left: 30%;
-
       transition: all 0.4s ease-in-out;
       animation: ${move3} 8s infinite;
       animation-delay: 0.5s;
+      @media screen and (max-width: 768px) {
+        width: 200px;
+        height: 200px;
+        top: 40%;
+        left: 30%;
+      }
     }
     .user2 {
       position: absolute;
@@ -190,6 +195,12 @@ const Herostyle = styled.section`
       transition: all 0.4s ease-in-out;
       animation: ${Move} 8s infinite;
       animation-delay: 0.5s;
+      @media screen and (max-width: 768px) {
+        width: 100px;
+        height: 100px;
+        bottom: 20%;
+        left: 5%;
+      }
     }
     .user3 {
       position: absolute;
@@ -198,6 +209,12 @@ const Herostyle = styled.section`
       transition: all 0.4s ease-in-out;
       animation: ${move2} 8s infinite;
       animation-delay: 0.5s;
+      @media screen and (max-width: 768px) {
+        width: 130px;
+        height: 130px;
+        bottom: 20%;
+        right: 5%;
+      }
     }
     .user4 {
       position: absolute;
@@ -206,6 +223,12 @@ const Herostyle = styled.section`
       transition: all 0.4s ease-in-out;
       animation: ${Move} 8s infinite;
       animation-delay: 0.5s;
+      @media screen and (max-width: 768px) {
+        width: 130px;
+        height: 130px;
+        top: 20%;
+        right: 5%;
+      }
     }
     .message1 {
       position: absolute;
@@ -214,6 +237,10 @@ const Herostyle = styled.section`
       transition: all 0.4s ease-in-out;
       animation: ${move2} 8s infinite;
       animation-delay: 0.5s;
+      @media screen and (max-width: 768px) {
+        width: 80px;
+        height: 80px;
+      }
     }
     .message2 {
       position: absolute;
@@ -222,6 +249,11 @@ const Herostyle = styled.section`
       transition: all 0.4s ease-in-out;
       animation: ${Move} 8s infinite;
       animation-delay: 0.5s;
+      @media screen and (max-width: 768px) {
+        width: 80px;
+        height: 80px;
+        top:35%;
+      }
     }
     .ring {
       position: absolute;
@@ -230,6 +262,10 @@ const Herostyle = styled.section`
       transition: all 0.4s ease-in-out;
       animation: ${move2} 8s infinite;
       animation-delay: 0.5s;
+      @media screen and (max-width: 768px) {
+        width: 80px;
+        height: 80px;
+      }
     }
   }
   .left {
@@ -240,6 +276,9 @@ const Herostyle = styled.section`
     .textcontainer {
       display: flex;
       flex-direction: column;
+      @media screen and (max-width: 768px) {
+        padding: 2rem;
+      }
       .Mainheader {
         font-weight: 800;
         font-size: var(--Header-big);
@@ -254,6 +293,10 @@ const Herostyle = styled.section`
         flex-grow: 0;
         margin: 16px 0px;
         width: 540px;
+        @media screen and (max-width: 768px) {
+          font-size: 2.7rem;
+          width: 100%;
+        }
       }
       .subheader {
         font-weight: normal;
@@ -263,6 +306,10 @@ const Herostyle = styled.section`
         color: #18191f;
         width: 540px;
         margin-bottom: 32px;
+        @media screen and (max-width: 768px) {
+          font-size: 1rem;
+          width: 90%;
+        }
       }
       .buttoncontaine {
         display: flex;

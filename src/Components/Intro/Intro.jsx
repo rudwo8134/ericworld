@@ -32,20 +32,26 @@ const Intro = () => {
 const Introstyled = styled.section`
   width: 100vw;
   height: 600px;
-  background: #F9FAFC;
+  background: #f9fafc;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  .half1{
+  .half1 {
     position: absolute;
     top: 0%;
     left: 0;
+    @media screen and (max-width: 768px) {
+      width: 100px;
+    }
   }
-  .half2{
+  .half2 {
     position: absolute;
     bottom: 0;
     left: 10%;
+    @media screen and (max-width: 768px) {
+      width: 100px;
+    }
   }
 `;
 const Wrapper = styled.div`
@@ -53,6 +59,9 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 2rem;
+  @media screen and (max-width: 768px) {
+    padding: 2rem;
+  }
   .left {
     width: 100%;
     height: 100%;
@@ -62,6 +71,10 @@ const Wrapper = styled.div`
     img {
       border-radius: 50%;
       margin-right: 5rem;
+      @media screen and (max-width: 768px) {
+        width: 250px;
+        height: 250px;
+      }
     }
   }
   .right {
@@ -83,6 +96,9 @@ const Wrapper = styled.div`
       order: 0;
       flex-grow: 0;
       margin: 32px 0px;
+      @media screen and (max-width: 768px) {
+        font-size: 2.5rem;
+      }
     }
     .paragraph {
       width: 444px;
@@ -104,6 +120,10 @@ const Wrapper = styled.div`
       order: 1;
       flex-grow: 0;
       margin: 32px 0px;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        width: 90%;
+      }
     }
   }
 `;

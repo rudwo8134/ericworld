@@ -54,6 +54,9 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 2rem;
+  @media screen and (max-width: 768px) {
+    max-width: 100vw;
+  }
   .right {
     width: 100%;
     height: 100%;
@@ -62,11 +65,17 @@ const Wrapper = styled.div`
     align-items: center;
     img {
       border-radius: 50%;
+      @media screen and (max-width: 768px) {
+        width: 300px;
+      }
     }
   }
   .left {
     width: 445px;
     margin-right: 3rem;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
     .title {
       font-weight: 800;
       font-size: 40px;
@@ -85,6 +94,9 @@ const Wrapper = styled.div`
       order: 0;
       flex-grow: 0;
       margin: 32px 0px;
+      @media screen and (max-width: 768px) {
+        font-size: 2rem;
+      }
     }
     .paragraph {
       font-style: normal;
@@ -105,6 +117,10 @@ const Wrapper = styled.div`
       order: 1;
       flex-grow: 0;
       margin: 32px 0px;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        width: 80%;
+      }
     }
   }
 `;

@@ -17,6 +17,7 @@ const Projectlistbox = ({url,color,title,skills,image}) => {
 }
 const Container = styled.div`
   width: 350px;
+
   .title {
     font-style: normal;
     font-weight: 600;
@@ -36,7 +37,6 @@ const Container = styled.div`
     order: 0;
     flex-grow: 0;
     margin: 8px 0px;
-  
   }
   .skills {
     font-style: normal;
@@ -70,6 +70,12 @@ const Wrapper = styled.div`
   border-radius: 8px;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
+  @media screen and (max-width: 768px) {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   :hover {
     img {
       transform: scale(1.05);
@@ -79,6 +85,9 @@ const Wrapper = styled.div`
     transition: all 0.3s ease-in-out;
     width: 350px;
     height: 300px;
+    @media screen and (max-width: 768px) {
+      width: 400px;
+    }
   }
 `;
 

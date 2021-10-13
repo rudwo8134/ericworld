@@ -67,16 +67,23 @@ const Testmonial = () => {
 const Wrapper = styled.section`
   width: 100vw;
   height: 663px;
+
   background-color: #d5fafc;
   padding: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    height: 1500px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
   .title {
     font-style: normal;
     font-weight: 800;
     font-size: 48px;
     line-height: 64px;
+
     /* identical to box height, or 133% */
 
     text-align: center;
@@ -119,13 +126,20 @@ const Wrapper = styled.section`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
     .message {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      @media screen and (max-width: 768px) {
+        margin-top: 3rem;
+      }
       .userimage {
-        margin-top:16px;
+        margin-top: 16px;
         width: 56px;
         height: 56px;
         transform: rotate(27deg);

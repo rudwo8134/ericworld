@@ -33,3 +33,7 @@ Email: rudwo8134@gmail.com
   3. add the Contact page(use the forms free)
 
 -- need to add the interaction
+
+
+#### DAY 3 (2021, 10,13 Wed)
+  1. add the media query for 768px for ipad 

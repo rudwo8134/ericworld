@@ -29,8 +29,12 @@ const Projects = () => {
 
 const Wrapper = styled.div`
   width: 100vw;
-  padding:4rem;
-  margin:2rem;
+  padding: 4rem;
+  margin: 2rem;
+  @media screen and (max-width: 768px) {
+   width: 95vw;
+  }
+
   .header {
     font-weight: 800;
     font-size: 48px;
@@ -49,13 +53,23 @@ const Wrapper = styled.div`
     order: 0;
     flex-grow: 0;
     margin: 8px 0px;
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
-  .projectcontainer{
-    margin-top:3rem;
+  .projectcontainer {
+    margin-top: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     row-gap: 3rem;
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+    }
   }
 `;
 

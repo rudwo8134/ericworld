@@ -16,9 +16,9 @@ const Footer = () => {
       <Innerlayouts>
         <Footerstyle>
           <div className="logocontainer">
-            <ScrollLink onClick={togglehome}>
+            <div onClick={togglehome}>
               <img src={Logoimage} alt="logofooter" className="logo" />
-            </ScrollLink>
+            </div>
           </div>
           <ul className="linklist">
             {Linkdata.map((data, index) => {

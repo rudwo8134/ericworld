@@ -59,6 +59,9 @@ const Wrapper = styled.section`
       margin: 8px 0px;
       width: 730px;
       margin-bottom: 48px;
+      @media screen and (max-width: 768px) {
+        font-size: 2.2rem;
+      }
     }
     .cardcontainer {
       display: grid;

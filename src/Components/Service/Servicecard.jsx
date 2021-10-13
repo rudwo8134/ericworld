@@ -41,12 +41,19 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    width: 230px;
+    height: 250px;
+  }
 
   .explore {
     margin-top: 40px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    @media screen and (max-width: 768px) {
+      margin-top: 10px;
+    }
     h3 {
       margin-right: 0.5rem;
       font-style: normal;
@@ -67,6 +74,10 @@ const Wrapper = styled.div`
       order: 0;
       flex-grow: 0;
       margin: 0px 8px;
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        margin:0;
+      }
     }
     svg {
       font-style: normal;
@@ -87,12 +98,20 @@ const Wrapper = styled.div`
       order: 0;
       flex-grow: 0;
       margin: 0px 8px;
+      @media screen and (max-width: 768px) {
+        font-size: 10px;
+      }
     }
   }
   .logo {
     width: 34px;
     height: 34px;
     margin-bottom: 56px;
+    @media screen and (max-width: 768px) {
+      width: 25px;
+      height: 25px;
+      margin-bottom: 0.5rem;
+    }
   }
   .container {
     .header {
@@ -114,6 +133,9 @@ const Wrapper = styled.div`
       order: 0;
       flex-grow: 0;
       margin: 12px 0px;
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
     .paragraph {
       font-style: normal;
@@ -134,6 +156,9 @@ const Wrapper = styled.div`
       order: 1;
       flex-grow: 0;
       margin: 12px 0px;
+      @media screen and (max-width: 768px) {
+        font-size: 0.7rem;
+      }
     }
   }
 `;
