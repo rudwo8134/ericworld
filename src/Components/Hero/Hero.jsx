@@ -26,13 +26,22 @@ const Hero = () => {
             Eric is the Front end developer. and also he has a skills to design
             the website. he has lots of skills.{' '}
           </span>
-          <ScrollLink>
+          <ScrollLink
+            to="about"
+            spy={true}
+            smooth={true}
+            hashSpy={true}
+            offset={50}
+            duration={500}
+            delay={300}
+            isDynamic={true}
+            ignoreCancelEvents={false}
+            spyThrottle={500}
+          >
             <div className="buttoncontaine">
               <AiOutlinePlayCircle></AiOutlinePlayCircle>
               <div className="bar"></div>
-              <span  className="logo">
-                Discover
-              </span>
+              <span className="logo">Discover</span>
             </div>
           </ScrollLink>
         </div>

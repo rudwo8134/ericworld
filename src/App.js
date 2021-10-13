@@ -4,13 +4,13 @@ import Homepage from './Pages/Homepage';
 
 function App() {
   return (
-   <>
-   <Layout>
-      <Switch>
-        <Route exact path="/" render={()=><Homepage/>}/>
-      </Switch>
-   </Layout>
-   </>
+    <>
+      <Layout>
+        <Switch>
+          <Route exact path="/" render={() => <Homepage />} />
+        </Switch>
+      </Layout>
+    </>
   );
 }
 

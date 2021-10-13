@@ -29,3 +29,7 @@ Email: rudwo8134@gmail.com
 
 #### DAY 2 (2021, 10,12 Tue)
   1. add the Intro, Serveice page
+  2. add the projects page
+  3. add the Contact page(use the forms free)
+
+-- need to add the interaction

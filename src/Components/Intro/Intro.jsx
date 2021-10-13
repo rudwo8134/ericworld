@@ -7,7 +7,7 @@ import Halfcircle2 from '../../assets/intro/Half Circle 3.png';
 
 const Intro = () => {
   return (
-    <Introstyled>
+    <Introstyled id="about">
       <Innerlayouts>
         <Wrapper>
           <div className="left">
@@ -16,10 +16,10 @@ const Intro = () => {
           <div className="right">
             <h1 className="title">Eric.shin</h1>
             <div className="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst
-              risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
-              suscipit non. Non commodo volutpat, pharetra, vel.
+              I have passion to build the code on the front-end side. I have a
+              Advanced-diploma on Cenetennial college. I have many expriences on
+              the workplace. I was recently worked in Siemens. So I had a lot of
+              chances to get Experiences about electronics and software
             </div>
           </div>
         </Wrapper>

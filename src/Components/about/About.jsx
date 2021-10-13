@@ -8,7 +8,7 @@ import Halfcircle2 from '../../assets/intro/Half Circle 3.png';
 
 const About = () => {
   return (
-    <Introstyled>
+    <Introstyled >
       <Innerlayouts>
         <Wrapper>
           <div className="left">

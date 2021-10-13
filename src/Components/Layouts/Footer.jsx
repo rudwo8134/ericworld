@@ -1,19 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout'
-import { Link as ScrollLink } from 'react-scroll'
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Logoimage from '../../assets/nav/Logo(white).png'
 import { Linkdata } from './Linkdata';
 import {BsFacebook,BsLinkedin,BsGithub,BsInstagram} from 'react-icons/bs'
 
 
 const Footer = () => {
+    const togglehome = () => {
+      scroll.scrollToTop();
+    };
   return (
     <Wrapper>
       <Innerlayouts>
         <Footerstyle>
           <div className="logocontainer">
-            <ScrollLink>
+            <ScrollLink onClick={togglehome}>
               <img src={Logoimage} alt="logofooter" className="logo" />
             </ScrollLink>
           </div>
@@ -21,7 +24,18 @@ const Footer = () => {
             {Linkdata.map((data, index) => {
               return (
                 <li key={index}>
-                  <ScrollLink to={data.link}>
+                  <ScrollLink
+                    to={data.link}
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={50}
+                    duration={500}
+                    delay={300}
+                    isDynamic={true}
+                    ignoreCancelEvents={false}
+                    spyThrottle={500}
+                  >
                     <span className="linkname">{data.name}</span>
                   </ScrollLink>
                 </li>

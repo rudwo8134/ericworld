@@ -2,23 +2,28 @@ import React from 'react'
 import styled from 'styled-components'
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
 import Servicecard from './Servicecard';
+import { Servicedata } from './Servicedata';
 
 const Service = () => {
   return (
-    <Wrapper>
+    <Wrapper id="skills">
       <Innerlayouts>
         <div className="contents">
           <h1 className="title">Services that connect you to your users</h1>
           <div className="cardcontainer">
-            <Servicecard />
-            <Servicecard />
-            <Servicecard />
-            <Servicecard />
-            <Servicecard />
-            <Servicecard />
+            {Servicedata.map((item, index) => {
+              return (
+                <Servicecard
+                 key={index}
+                  img={item.img}
+                  header={item.header}
+                  para={item.para}
+                  link={item.link}
+                />
+              );
+            })}
           </div>
         </div>
-        
       </Innerlayouts>
     </Wrapper>
   );

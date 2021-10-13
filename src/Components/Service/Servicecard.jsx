@@ -9,18 +9,26 @@ const Servicecard = ({img,header,para,link}) => {
     <Wrapper>
       <img src={Logo} alt="logo1" className="logo" />
       <div className="container">
-        <h1 className="header">Responsive Web Design</h1>
-        <span className="paragraph">
-          Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam
-          sem tellus erat.
-        </span>
+        <h1 className="header">{header}</h1>
+        <span className="paragraph">{para}</span>
       </div>
-        <Link to="#">
+      <Link
+        to={link}
+        spy={true}
+        smooth={true}
+        hashSpy={true}
+        offset={50}
+        duration={500}
+        delay={300}
+        isDynamic={true}
+        ignoreCancelEvents={false}
+        spyThrottle={500}
+      >
         <span className="explore">
           <h3>Explore</h3>
-          <BsArrowRight/>
+          <BsArrowRight />
         </span>
-        </Link>
+      </Link>
     </Wrapper>
   );
 }
@@ -33,6 +41,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   .explore {
     margin-top: 40px;
     display: flex;
@@ -81,8 +90,8 @@ const Wrapper = styled.div`
     }
   }
   .logo {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     margin-bottom: 56px;
   }
   .container {

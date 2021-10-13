@@ -1,12 +1,15 @@
 import React,{useEffect,useState} from 'react'
 import styled from 'styled-components';
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import Logo from '../../assets/nav/Navlogo.png'
 import { Linkdata } from './Linkdata';
 
 
 const Nav = () => {
+  const togglehome = () => {
+       scroll.scrollToTop();
+     };
   const [Scrollon, setScrollon] = useState(false);
 
   const handleScroll = () =>{
@@ -31,7 +34,7 @@ const Nav = () => {
       <Innerlayouts>
         <Navstyle Scrollon={Scrollon}>
           <div className="logocontainer">
-            <ScrollLink to="/">
+            <ScrollLink onClick={togglehome}>
               <img src={Logo} alt="logo" className="logo" />
             </ScrollLink>
           </div>
@@ -40,12 +43,24 @@ const Nav = () => {
               {Linkdata.map((data, index) => {
                 return (
                   <li key={index}>
-                    <ScrollLink to={data.link}>
+                    <ScrollLink
+                      to={data.link}
+                      spy={true}
+                      smooth={true}
+                      hashSpy={true}
+                      offset={50}
+                      duration={500}
+                      delay={300}
+                      isDynamic={true}
+                      ignoreCancelEvents={false}
+                      spyThrottle={500}
+                    >
                       <span className="Linkdataname">{data.name}</span>
                     </ScrollLink>
                   </li>
                 );
               })}
+
             </ul>
           </div>
         </Navstyle>
@@ -100,12 +115,14 @@ const Navstyle = styled.nav`
           text-transform: capitalize;
           transition: all 0.3s ease-in-out;
         }
+    
         :hover {
           transform: translateY(-3px) scale(1.2);
           .Linkdataname {
             color: ${({ Scrollon }) =>
               Scrollon ? 'white' : 'var(--Primary-color)'};
           }
+      
         }
       }
     }
