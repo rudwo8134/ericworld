@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/ericworld/static/js/main.64b15dfd.chunk.js",
-    "main.js.map": "/ericworld/static/js/main.64b15dfd.chunk.js.map",
+    "main.js": "/ericworld/static/js/main.e71a1b55.chunk.js",
+    "main.js.map": "/ericworld/static/js/main.e71a1b55.chunk.js.map",
     "runtime-main.js": "/ericworld/static/js/runtime-main.211e7571.js",
     "runtime-main.js.map": "/ericworld/static/js/runtime-main.211e7571.js.map",
-    "static/js/2.897a8bc5.chunk.js": "/ericworld/static/js/2.897a8bc5.chunk.js",
-    "static/js/2.897a8bc5.chunk.js.map": "/ericworld/static/js/2.897a8bc5.chunk.js.map",
+    "static/js/2.112928ba.chunk.js": "/ericworld/static/js/2.112928ba.chunk.js",
+    "static/js/2.112928ba.chunk.js.map": "/ericworld/static/js/2.112928ba.chunk.js.map",
     "index.html": "/ericworld/index.html",
-    "static/js/2.897a8bc5.chunk.js.LICENSE.txt": "/ericworld/static/js/2.897a8bc5.chunk.js.LICENSE.txt",
+    "static/js/2.112928ba.chunk.js.LICENSE.txt": "/ericworld/static/js/2.112928ba.chunk.js.LICENSE.txt",
     "static/media/Logos.d8192ec8.png": "/ericworld/static/media/Logos.d8192ec8.png",
     "static/media/background.30127b9f.jpg": "/ericworld/static/media/background.30127b9f.jpg",
     "static/media/ericshin 1.97579ddc.png": "/ericworld/static/media/ericshin 1.97579ddc.png",
@@ -31,7 +31,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.211e7571.js",
-    "static/js/2.897a8bc5.chunk.js",
-    "static/js/main.64b15dfd.chunk.js"
+    "static/js/2.112928ba.chunk.js",
+    "static/js/main.e71a1b55.chunk.js"
   ]
 }
