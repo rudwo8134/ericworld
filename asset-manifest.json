@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/ericworld/static/js/main.2f566309.chunk.js",
-    "main.js.map": "/ericworld/static/js/main.2f566309.chunk.js.map",
+    "main.js": "/ericworld/static/js/main.f7a93410.chunk.js",
+    "main.js.map": "/ericworld/static/js/main.f7a93410.chunk.js.map",
     "runtime-main.js": "/ericworld/static/js/runtime-main.211e7571.js",
     "runtime-main.js.map": "/ericworld/static/js/runtime-main.211e7571.js.map",
     "static/js/2.112928ba.chunk.js": "/ericworld/static/js/2.112928ba.chunk.js",
@@ -31,6 +31,6 @@
   "entrypoints": [
     "static/js/runtime-main.211e7571.js",
     "static/js/2.112928ba.chunk.js",
-    "static/js/main.2f566309.chunk.js"
+    "static/js/main.f7a93410.chunk.js"
   ]
 }
