@@ -60,9 +60,11 @@ const Contactcontainer = styled.div`
   z-index: 4;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 480px) {
     height: 1300px;
+    align-items: flex-start;
   }
   .container {
     width: 800px;
@@ -75,6 +77,7 @@ const Contactcontainer = styled.div`
     .contactinfo {
       display: flex;
       flex-direction: column;
+
       .submitbutton {
         margin: 0 auto;
         margin-top: 60px;
