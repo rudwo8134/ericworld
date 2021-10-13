@@ -37,12 +37,17 @@ const Introstyled = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden ;
+
   .half1 {
     position: absolute;
     top: 0%;
     left: 0;
     @media screen and (max-width: 768px) {
       width: 100px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 150px;
     }
   }
   .half2 {
@@ -52,6 +57,10 @@ const Introstyled = styled.section`
     @media screen and (max-width: 768px) {
       width: 100px;
     }
+    @media screen and (max-width: 480px) {
+      width: 150px;
+      left:70% ;
+    }
   }
 `;
 const Wrapper = styled.div`
@@ -59,6 +68,9 @@ const Wrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 2rem;
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   @media screen and (max-width: 768px) {
     padding: 2rem;
   }
@@ -74,6 +86,11 @@ const Wrapper = styled.div`
       @media screen and (max-width: 768px) {
         width: 250px;
         height: 250px;
+      }
+      @media screen and (max-width: 480px) {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
       }
     }
   }
@@ -99,6 +116,11 @@ const Wrapper = styled.div`
       @media screen and (max-width: 768px) {
         font-size: 2.5rem;
       }
+      @media screen and (max-width: 480px) {
+        font-size: 2rem;
+        margin:16px auto;
+        text-align:center;
+      }
     }
     .paragraph {
       width: 444px;
@@ -123,6 +145,11 @@ const Wrapper = styled.div`
       @media screen and (max-width: 768px) {
         font-size: 1rem;
         width: 90%;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 100%;
       }
     }
   }

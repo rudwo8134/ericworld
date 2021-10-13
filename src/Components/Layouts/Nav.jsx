@@ -112,9 +112,7 @@ const Nav = () => {
   );
 }
 
-const Togglemenu = styled.div`
-  
-`;
+
 
 const Hamberguricon = styled(GiHamburgerMenu)`
   width: 40px;
@@ -182,6 +180,9 @@ const Wrapper = styled.div`
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      @media screen and (max-width: 480px) {
+        height: 65%;
+      }
       div {
         :hover {
           span {
@@ -190,6 +191,9 @@ const Wrapper = styled.div`
         }
         span {
           font-size: 3rem;
+          @media screen and (max-width: 480px) {
+            font-size: 1.7rem;
+          }
         }
       }
     }
@@ -208,6 +212,9 @@ const Navstyle = styled.nav`
   @media screen and (max-width: 768px) {
     width: 100vw;
     padding: 0 3rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
   }
   .logocontainer {
     display: flex;

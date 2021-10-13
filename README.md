@@ -37,3 +37,4 @@ Email: rudwo8134@gmail.com
 
 #### DAY 3 (2021, 10,13 Wed)
   1. add the media query for 768px for ipad 
+  2. add the media quert for 480px for iphone Large

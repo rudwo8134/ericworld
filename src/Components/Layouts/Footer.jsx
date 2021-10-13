@@ -74,7 +74,7 @@ const Footerstyle = styled.footer`
   padding: 2rem;
   .logocontainer {
     margin-top: 24px;
-    img{
+    img {
       cursor: pointer;
     }
   }
@@ -83,6 +83,9 @@ const Footerstyle = styled.footer`
     width: 60%;
     justify-content: space-between;
     margin-top: 32px;
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
     .linkname {
       font-weight: normal;
       font-size: var(--body-regualr);
@@ -94,6 +97,10 @@ const Footerstyle = styled.footer`
       flex-grow: 0;
       margin: 0px 24px;
       cursor: pointer;
+      @media screen and (max-width: 480px) {
+        font-size: 0.9rem;
+        margin: 0px 6px;
+      }
     }
   }
   .divider {
@@ -117,17 +124,26 @@ const Footerstyle = styled.footer`
       line-height: 24px;
       font-feature-settings: 'salt' on, 'liga' off;
       color: var(--Black-300);
+      @media screen and (max-width: 480px) {
+        font-size: 0.7rem;
+      }
     }
     .linkcontainer {
       width: 10%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media screen and (max-width: 480px) {
+        width: 30%;
+      }
       svg {
         width: 15.8px;
         height: 15.8px;
         color: white;
         cursor: pointer;
+        @media screen and (max-width: 480px) {
+          margin-right: 3px;
+        }
       }
     }
   }

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Project1 from '../../assets/Project/project1.png'
 
 const Projectlistbox = ({url,color,title,skills,image}) => {
   return (
@@ -17,7 +16,7 @@ const Projectlistbox = ({url,color,title,skills,image}) => {
 }
 const Container = styled.div`
   width: 350px;
-
+ 
   .title {
     font-style: normal;
     font-weight: 600;
@@ -76,6 +75,9 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
   }
+  @media screen and (max-width: 480px) {
+    width: 350px;
+  }
   :hover {
     img {
       transform: scale(1.05);
@@ -87,6 +89,9 @@ const Wrapper = styled.div`
     height: 300px;
     @media screen and (max-width: 768px) {
       width: 400px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 300px;
     }
   }
 `;

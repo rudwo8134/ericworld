@@ -35,6 +35,9 @@ const Wrapper = styled.section`
   width: 100vw;
   background-color: white;
   position: relative;
+  @media screen and (max-width: 480px) {
+    height: 1600px;
+  }
 
   .background {
     padding: 2rem;
@@ -51,9 +54,19 @@ const Wrapper = styled.section`
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       padding: 1rem;
+      @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 3rem;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+      }
     }
     .contents {
       margin: 2rem;
+      @media screen and (max-width: 480px) {
+        margin: 0 auto;
+      }
       .title {
         font-weight: 800;
         font-size: 48px;

@@ -135,6 +135,9 @@ const Herostyle = styled.section`
     bottom: 50px;
     right: 50%;
     transform: translate(50%, 0);
+    @media screen and (max-width: 480px) {
+      font-size: 7px;
+    }
     .mouse {
       position: relative;
       display: block;
@@ -146,6 +149,10 @@ const Herostyle = styled.section`
       box-sizing: border-box;
       border: 3px solid var(--Black-800);
       border-radius: 23px;
+      @media screen and (max-width: 480px) {
+        width: 20px;
+        height: 35px;
+      }
       ::before {
         content: '';
         position: absolute;
@@ -158,6 +165,10 @@ const Herostyle = styled.section`
         background: var(--Black-800);
         border-radius: 50%;
         animation: ${animouse} 2.5s linear infinite;
+        @media screen and (max-width: 480px) {
+          width: 7px;
+          height: 7px;
+        }
       }
       h3 {
         position: absolute;
@@ -169,6 +180,10 @@ const Herostyle = styled.section`
         margin-top: 1rem;
         color: var(--Black-800);
         font-size: var(--body-small);
+        @media screen and (max-width: 480px) {
+          font-size: 0.7rem;
+          margin-top: 0;
+        }
       }
     }
   }
@@ -187,6 +202,10 @@ const Herostyle = styled.section`
         top: 40%;
         left: 30%;
       }
+      @media screen and (max-width: 480px) {
+        width: 140px;
+        height: 140px;
+      }
     }
     .user2 {
       position: absolute;
@@ -200,6 +219,10 @@ const Herostyle = styled.section`
         height: 100px;
         bottom: 20%;
         left: 5%;
+      }
+      @media screen and (max-width: 480px) {
+        width: 80px;
+        height: 80px;
       }
     }
     .user3 {
@@ -215,6 +238,10 @@ const Herostyle = styled.section`
         bottom: 20%;
         right: 5%;
       }
+      @media screen and (max-width: 480px) {
+        width: 90px;
+        height: 90px;
+      }
     }
     .user4 {
       position: absolute;
@@ -229,6 +256,10 @@ const Herostyle = styled.section`
         top: 20%;
         right: 5%;
       }
+      @media screen and (max-width: 480px) {
+        width: 90px;
+        height: 90px;
+      }
     }
     .message1 {
       position: absolute;
@@ -241,6 +272,10 @@ const Herostyle = styled.section`
         width: 80px;
         height: 80px;
       }
+      @media screen and (max-width: 480px) {
+        width: 50px;
+        height: 50px;
+      }
     }
     .message2 {
       position: absolute;
@@ -252,7 +287,11 @@ const Herostyle = styled.section`
       @media screen and (max-width: 768px) {
         width: 80px;
         height: 80px;
-        top:35%;
+        top: 35%;
+      }
+      @media screen and (max-width: 480px) {
+        width: 50px;
+        height: 50px;
       }
     }
     .ring {
@@ -266,6 +305,10 @@ const Herostyle = styled.section`
         width: 80px;
         height: 80px;
       }
+      @media screen and (max-width: 480px) {
+        width: 50px;
+        height: 50px;
+      }
     }
   }
   .left {
@@ -278,6 +321,9 @@ const Herostyle = styled.section`
       flex-direction: column;
       @media screen and (max-width: 768px) {
         padding: 2rem;
+      }
+      @media screen and (max-width: 480px) {
+        padding: 1rem;
       }
       .Mainheader {
         font-weight: 800;
@@ -297,6 +343,11 @@ const Herostyle = styled.section`
           font-size: 2.7rem;
           width: 100%;
         }
+        @media screen and (max-width: 480px) {
+          font-size: 1.8rem;
+          width: 80%;
+          line-height: 54px;
+        }
       }
       .subheader {
         font-weight: normal;
@@ -309,6 +360,10 @@ const Herostyle = styled.section`
         @media screen and (max-width: 768px) {
           font-size: 1rem;
           width: 90%;
+        }
+        @media screen and (max-width: 480px) {
+          font-size: 0.8rem;
+          width: 80%;
         }
       }
       .buttoncontaine {
@@ -335,6 +390,10 @@ const Herostyle = styled.section`
           height: 52px;
           box-sizing: border-box;
           transition: all 0.3s ease-in-out;
+          @media screen and (max-width: 480px) {
+            width: 40px;
+            height: 40px;
+          }
         }
         .bar {
           border: 2px solid #18191f;
@@ -345,6 +404,9 @@ const Herostyle = styled.section`
           flex-grow: 0;
           margin: 0px 8px;
           transition: all 0.3s ease-in-out;
+          @media screen and (max-width: 480px) {
+            width: 40px;
+          }
         }
         .logo {
           font-weight: bold;
@@ -368,6 +430,9 @@ const Herostyle = styled.section`
           align-self: center;
           flex-grow: 0;
           margin: 0px 8px;
+          @media screen and (max-width: 480px) {
+            font-size: 0.7rem;
+          }
         }
       }
     }

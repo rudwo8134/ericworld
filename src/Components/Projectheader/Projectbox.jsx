@@ -35,6 +35,10 @@ const BoxWrapper = styled.div`
       width: 150px;
       height: 150px;
     }
+    @media screen and (max-width: 480px) {
+      width: 300px;
+      height: 300px;
+    }
     h2 {
       font-weight: 800;
       font-size: 48px;
@@ -57,6 +61,9 @@ const BoxWrapper = styled.div`
       @media screen and (max-width: 768px) {
         font-size: 2.3rem;
       }
+      @media screen and (max-width: 480px) {
+        font-size: 4rem;
+      }
     }
     span {
       font-size: 18px;
@@ -78,6 +85,10 @@ const BoxWrapper = styled.div`
       margin: 0px 0px;
       @media screen and (max-width: 768px) {
         font-size: 0.8rem;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+        margin-top:1rem;
       }
     }
   }

@@ -36,6 +36,9 @@ const Introstyled = styled.section`
   justify-content: center;
   align-items: center;
   position: relative;
+  @media screen and (max-width: 480px) {
+   height: 800px;
+  }
   .half1 {
     position: absolute;
     bottom: 0%;
@@ -47,6 +50,11 @@ const Introstyled = styled.section`
     top: 0;
     right: 10%;
     transform: rotate(180deg);
+    @media screen and (max-width: 480px) {
+      top: 0;
+      left: -20%;
+      width: 190px;
+    }
   }
 `;
 const Wrapper = styled.div`
@@ -57,6 +65,9 @@ const Wrapper = styled.div`
   @media screen and (max-width: 768px) {
     max-width: 100vw;
   }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .right {
     width: 100%;
     height: 100%;
@@ -66,6 +77,9 @@ const Wrapper = styled.div`
     img {
       border-radius: 50%;
       @media screen and (max-width: 768px) {
+        width: 300px;
+      }
+      @media screen and (max-width: 480px) {
         width: 300px;
       }
     }
@@ -97,6 +111,10 @@ const Wrapper = styled.div`
       @media screen and (max-width: 768px) {
         font-size: 2rem;
       }
+      @media screen and (max-width: 480px) {
+        font-size: 2.4rem;
+        text-align: center;
+      }
     }
     .paragraph {
       font-style: normal;
@@ -120,6 +138,11 @@ const Wrapper = styled.div`
       @media screen and (max-width: 768px) {
         font-size: 1rem;
         width: 80%;
+      }
+      @media screen and (max-width: 480px) {
+        font-size: 1rem;
+        text-align: center;
+        margin:10px auto;
       }
     }
   }

@@ -31,8 +31,12 @@ const Wrapper = styled.div`
   width: 100vw;
   padding: 4rem;
   margin: 2rem;
+
   @media screen and (max-width: 768px) {
-   width: 95vw;
+    width: 95vw;
+  }
+  @media screen and (max-width: 480px) {
+    margin: 0 auto;
   }
 
   .header {
@@ -56,6 +60,9 @@ const Wrapper = styled.div`
     @media screen and (max-width: 768px) {
       text-align: center;
     }
+    @media screen and (max-width: 480px) {
+      font-size: 2.5rem;
+    }
   }
   .projectcontainer {
     margin-top: 3rem;
@@ -69,6 +76,9 @@ const Wrapper = styled.div`
       width: 70%;
       justify-content: center;
       align-items: center;
+    }
+    @media screen and (max-width: 480px) {
+      margin: 0 auto;
     }
   }
 `;

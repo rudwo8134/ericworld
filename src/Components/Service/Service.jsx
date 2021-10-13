@@ -62,12 +62,20 @@ const Wrapper = styled.section`
       @media screen and (max-width: 768px) {
         font-size: 2.2rem;
       }
+      @media screen and (max-width: 480px) {
+        font-size: 1.8rem;
+        width: 80%;
+        line-height: 48px;
+      }
     }
     .cardcontainer {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       column-gap: 30px;
       row-gap: 30px;
+      @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
 `;

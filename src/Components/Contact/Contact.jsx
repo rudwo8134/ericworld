@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Background from '../../assets/Contact/background.jpg'
-import { Innerlayouts } from '../../Layoutcomponents/Innerlayout'
 const Contact = () => {
   return (
     <Contactwholepart id="contact">
@@ -61,17 +60,23 @@ const Contactcontainer = styled.div`
   z-index: 4;
   display: flex;
   justify-content: center;
-  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    height: 1300px;
+  }
   .container {
     width: 800px;
     height: 500px;
     padding: 2rem;
-
+    @media screen and (max-width: 480px) {
+      height: 1000px;
+      padding: 1rem;
+    }
     .contactinfo {
       display: flex;
       flex-direction: column;
       .submitbutton {
-        margin:0 auto;
+        margin: 0 auto;
         margin-top: 60px;
         width: 170px;
         height: 60px;
@@ -88,22 +93,38 @@ const Contactcontainer = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        
 
         /* Colors / White */
 
         color: #ffffff;
+        @media screen and (max-width: 480px) {
+          margin-top: 20px;
+        }
       }
     }
     .contactcontainerwrapper {
       display: flex;
       align-items: center;
+      @media screen and (max-width: 480px) {
+        display: flex;
+        flex-direction: column;
+      }
+      .left {
+        @media screen and (max-width: 480px) {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 2rem;
+        }
+      }
     }
     .contactform {
       width: 580px;
       height: 270px;
       margin: 0 auto;
       margin-top: 63px;
+      @media screen and (max-width: 480px) {
+        margin-top: 20px;
+      }
       .name {
         width: 269px;
         height: 60px;
@@ -191,6 +212,10 @@ const Contactcontainer = styled.div`
           opacity: 1;
           border-radius: 100px;
         }
+        @media screen and (max-width: 480px) {
+          width: 270px;
+          height: 200px;
+        }
       }
     }
     .title {
@@ -206,6 +231,9 @@ const Contactcontainer = styled.div`
       /* Colors / White */
 
       color: #ffffff;
+      @media screen and (max-width: 480px) {
+        margin-top: 20px;
+      }
     }
     .paragraph {
       font-style: normal;
@@ -222,6 +250,10 @@ const Contactcontainer = styled.div`
       margin-top: 30px;
 
       mix-blend-mode: normal;
+      @media screen and (max-width: 480px) {
+        width: 60%;
+        margin: 2rem auto;
+      }
     }
   }
 `;

@@ -73,6 +73,9 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    padding: 1rem;
+  }
   @media screen and (max-width: 768px) {
     height: 1500px;
     justify-content: flex-start;
@@ -99,6 +102,9 @@ const Wrapper = styled.section`
     order: 0;
     flex-grow: 0;
     margin: 8px 0px;
+    @media screen and (max-width: 480px) {
+      font-size: 2.5rem;
+    }
   }
   .description {
     font-weight: normal;
