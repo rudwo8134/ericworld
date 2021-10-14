@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.js": "/ericworld/static/js/main.f7a93410.chunk.js",
-    "main.js.map": "/ericworld/static/js/main.f7a93410.chunk.js.map",
+    "main.js": "/ericworld/static/js/main.5448645b.chunk.js",
+    "main.js.map": "/ericworld/static/js/main.5448645b.chunk.js.map",
     "runtime-main.js": "/ericworld/static/js/runtime-main.211e7571.js",
     "runtime-main.js.map": "/ericworld/static/js/runtime-main.211e7571.js.map",
-    "static/js/2.112928ba.chunk.js": "/ericworld/static/js/2.112928ba.chunk.js",
-    "static/js/2.112928ba.chunk.js.map": "/ericworld/static/js/2.112928ba.chunk.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/ericworld/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.bbc2f8b0.chunk.js": "/ericworld/static/js/2.bbc2f8b0.chunk.js",
+    "static/js/2.bbc2f8b0.chunk.js.map": "/ericworld/static/js/2.bbc2f8b0.chunk.js.map",
     "index.html": "/ericworld/index.html",
-    "static/js/2.112928ba.chunk.js.LICENSE.txt": "/ericworld/static/js/2.112928ba.chunk.js.LICENSE.txt",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/ericworld/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/js/2.bbc2f8b0.chunk.js.LICENSE.txt": "/ericworld/static/js/2.bbc2f8b0.chunk.js.LICENSE.txt",
     "static/media/Logos.d8192ec8.png": "/ericworld/static/media/Logos.d8192ec8.png",
     "static/media/background.30127b9f.jpg": "/ericworld/static/media/background.30127b9f.jpg",
     "static/media/ericshin 1.97579ddc.png": "/ericworld/static/media/ericshin 1.97579ddc.png",
@@ -30,7 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.211e7571.js",
-    "static/js/2.112928ba.chunk.js",
-    "static/js/main.f7a93410.chunk.js"
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.bbc2f8b0.chunk.js",
+    "static/js/main.5448645b.chunk.js"
   ]
 }
