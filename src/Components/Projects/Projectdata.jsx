@@ -7,9 +7,18 @@ import project4 from '../../assets/Project/project4.png'
 import project3 from '../../assets/Project/project3.png'
 import project2 from '../../assets/Project/project2.png'
 import project1 from '../../assets/Project/project1.png'
+import project11 from '../../assets/Project/project11.png'
 
 
 export const Projectdata = [
+  {
+    title: 'Onroom(ontario room rent)',
+    skill: 'React, Figma, Styled-components, Google maps, Firebase, Redux, Redux-saga',
+    img: project11,
+    url: 'https://https://onroom.ca/#/',
+    type: 'react',
+    color: '#C1E5C0',
+  },
   {
     title: 'Speer test',
     skill: 'React, Css Design, Styled-components, form validation',
