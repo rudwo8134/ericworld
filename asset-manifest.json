@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/ericworld/static/js/main.5448645b.chunk.js",
-    "main.js.map": "/ericworld/static/js/main.5448645b.chunk.js.map",
+    "main.js": "/ericworld/static/js/main.806d2965.chunk.js",
+    "main.js.map": "/ericworld/static/js/main.806d2965.chunk.js.map",
     "runtime-main.js": "/ericworld/static/js/runtime-main.211e7571.js",
     "runtime-main.js.map": "/ericworld/static/js/runtime-main.211e7571.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/ericworld/static/css/2.7fc9bc2b.chunk.css",
@@ -17,6 +17,7 @@
     "static/media/message_pink.3b52b420.svg": "/ericworld/static/media/message_pink.3b52b420.svg",
     "static/media/project1.f41fe491.png": "/ericworld/static/media/project1.f41fe491.png",
     "static/media/project10.a549b28a.png": "/ericworld/static/media/project10.a549b28a.png",
+    "static/media/project11.4588b4ab.png": "/ericworld/static/media/project11.4588b4ab.png",
     "static/media/project2.efae197f.png": "/ericworld/static/media/project2.efae197f.png",
     "static/media/project3.e29a6153.png": "/ericworld/static/media/project3.e29a6153.png",
     "static/media/project4.0da54e7f.png": "/ericworld/static/media/project4.0da54e7f.png",
@@ -34,6 +35,6 @@
     "static/js/runtime-main.211e7571.js",
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.bbc2f8b0.chunk.js",
-    "static/js/main.5448645b.chunk.js"
+    "static/js/main.806d2965.chunk.js"
   ]
 }
