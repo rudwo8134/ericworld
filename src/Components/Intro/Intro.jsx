@@ -1,21 +1,28 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
 import Eric from '../../assets/intro/ericshin 1.png'
 import Halfcircle1 from '../../assets/intro/Half Circle 1.png'
 import Halfcircle2 from '../../assets/intro/Half Circle 3.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Intro = () => {
+  useEffect(()=>{
+    Aos.init({ duration: 2000, easing: 'ease-in-sine', delay: 100 });
+  })
   return (
     <Introstyled id="about">
       <Innerlayouts>
         <Wrapper>
-          <div className="left">
+          <div data-aos="zoom-in-down" className="left">
             <img src={Eric} alt="profile" className="eric" />
           </div>
           <div className="right">
-            <h1 className="title">Eric.shin</h1>
-            <div className="paragraph">
+            <h1 data-aos="fade-right" className="title">
+              Eric.shin
+            </h1>
+            <div data-aos="fade-right" className="paragraph">
               I have passion to build the code on the front-end side. I have a
               Advanced-diploma on Cenetennial college. I have many expriences on
               the workplace. I was recently worked in Siemens. So I had a lot of

@@ -1,24 +1,32 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import styled from 'styled-components';
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
 import picture from '../../assets/intro/Logos.png'
 import Halfcircle1 from '../../assets/intro/Half Circle 1.png';
 import Halfcircle2 from '../../assets/intro/Half Circle 3.png';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 const About = () => {
+   useEffect(() => {
+     Aos.init({ duration: 2000, easing: 'ease-in-sine', delay: 100 });
+   }, []);
   return (
-    <Introstyled >
+    <Introstyled>
       <Innerlayouts>
         <Wrapper>
           <div className="left">
-            <h1 className="title">What I can do it</h1>
-            <div className="paragraph">
+            <h1 data-aos="fade-left" className="title">
+              What I can do it
+            </h1>
+            <div data-aos="fade-left" className="paragraph">
               I can make a website with those technology. I prefer to use React
               library when I develop the website on Front-end-side.
             </div>
           </div>
-          <div className="right">
+          <div data-aos="zoom-out-down" className="right">
             <img src={picture} alt="profile" className="eric" />
           </div>
         </Wrapper>

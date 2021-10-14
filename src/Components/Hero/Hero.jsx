@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled,{keyframes} from 'styled-components'
 import {AiOutlinePlayCircle} from 'react-icons/ai'
 import { Link as ScrollLink } from 'react-scroll'
@@ -12,17 +12,23 @@ import Message from '../../assets/hero/message_blue.svg'
 import Message2 from '../../assets/hero/message_pink.svg';
 import Ring from '../../assets/hero/ring_orange-1.svg'
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 const Hero = () => {
- 
+  useEffect(()=>{
+    Aos.init({ duration: 1000, easing: 'ease-in-sine', delay: 100 });
+  },[])
   return (
     <Herostyle>
       <div className="left">
         <div className="textcontainer">
-          <span className="Mainheader">WElCOME TO ERIC’S PORTFOLIO</span>
-          <span className="subheader">
+          <span data-aos="fade-right" className="Mainheader">
+            WElCOME TO ERIC’S PORTFOLIO
+          </span>
+          <span data-aos="fade-right" className="subheader">
             Eric is the Front end developer. and also he has a skills to design
             the website. he has lots of skills.{' '}
           </span>
@@ -38,7 +44,7 @@ const Hero = () => {
             ignoreCancelEvents={false}
             spyThrottle={500}
           >
-            <div className="buttoncontaine">
+            <div data-aos="zoom-in" className="buttoncontaine">
               <AiOutlinePlayCircle></AiOutlinePlayCircle>
               <div className="bar"></div>
               <span className="logo">Discover</span>
@@ -55,7 +61,7 @@ const Hero = () => {
         <img src={Message2} alt="message2" className="message2" />
         <img src={Ring} alt="ring" className="ring" />
       </div>
-      <span className="scrollBtn">
+      <span data-aos="zoom-out" className="scrollBtn">
         <a href="/">
           <span className="mouse">
             <h3>scroll down</h3>

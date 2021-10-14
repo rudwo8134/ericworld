@@ -6,6 +6,8 @@ import Logo from '../../assets/nav/Navlogo.png'
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Linkdata } from './Linkdata';
 import {GrClose} from 'react-icons/gr'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 const Nav = () => {
@@ -34,6 +36,7 @@ const Nav = () => {
   }
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
+      Aos.init({ duration: 1000, easing: 'ease-in-sine', delay: 100 });
       return ()=>{
         window.removeEventListener('scroll', handleScroll);
       }
@@ -43,13 +46,13 @@ const Nav = () => {
     <Wrapper Scrollon={Scrollon}>
       <Innerlayouts>
         <Navstyle Scrollon={Scrollon}>
-          <div className="logocontainer">
+          <div data-aos="fade-down" className="logocontainer">
             <div onClick={togglehome}>
               <img src={Logo} alt="logo" className="logo" />
             </div>
           </div>
           <div className="linkcontainer">
-            <ul className="linklist">
+            <ul data-aos="fade-down" className="linklist">
               {Linkdata.map((data, index) => {
                 return (
                   <li key={index}>
@@ -76,8 +79,8 @@ const Nav = () => {
         </Navstyle>
       </Innerlayouts>
       {toggle ? (
-        <div className={toggle ? "activetogggle toggle" : "toggle"} >
-          <div className="navbar">
+        <div className={toggle ? 'activetogggle toggle' : 'toggle'}>
+          <div  className="navbar">
             <div onClick={togglehome} className="togglelogo">
               <img src={Logo} alt="logo" className="logo" />
             </div>
@@ -86,7 +89,7 @@ const Nav = () => {
           <div className="linkcontainer">
             {Linkdata.map((data, index) => {
               return (
-                <div key={index}>
+                <div data-aos="fade-right" key={index}>
                   <ScrollLink
                     to={data.link}
                     spy={true}

@@ -1,11 +1,15 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
 import Projectbox from './Projectbox';
 import { Projectdata } from '../Projects/Projectdata';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Projectheader = () => {
-
+  useEffect(() => {
+    Aos.init({ duration: 1000, easing: 'ease-in-sine', delay: 100 });
+  }, []);
   const number = Projectdata.length
 
   return (
@@ -13,12 +17,14 @@ const Projectheader = () => {
       <div className="background">
         <Innerlayouts>
           <div className="contents">
-            <h2 className="title">Some count that matters</h2>
-            <span className="paragraph">
+            <h2 data-aos="fade-right" className="title">
+              Some count that matters
+            </h2>
+            <span data-aos="fade-right" className="paragraph">
               My achievement in the journey depicted
             </span>
           </div>
-          <div className="categorycontainer">
+          <div data-aos="fade-left" className="categorycontainer">
             <Projectbox title="2+" description="Processing Project" />
             <Projectbox title={`${number}+`} description="Project Completed" />
             <Projectbox title="2+" description="Dedicated Members" />

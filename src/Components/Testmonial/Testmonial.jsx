@@ -1,19 +1,26 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import styled from 'styled-components'
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
 import User1 from '../../assets/hero/user1.png'
 import User2 from '../../assets/hero/user4.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Testmonial = () => {
+   useEffect(() => {
+     Aos.init({ duration: 1000, easing: 'ease-in-sine', delay: 100 });
+   }, []);
   return (
     <Wrapper id="testmonial">
       <Innerlayouts>
-        <h1 className="title">Testmonimals</h1>
-        <div className="description">
+        <h1 data-aos="fade-right" className="title">
+          Testmonimals
+        </h1>
+        <div data-aos="fade-right" className="description">
           I have been working with good collegues in Canada
         </div>
-        <div className="container">
+        <div data-aos="zoom-in-down" className="container">
           <div className="message">
             <div className="textmessagewrapper">
               <div className="textmessage">

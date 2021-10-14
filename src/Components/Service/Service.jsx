@@ -1,20 +1,27 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
 import Servicecard from './Servicecard';
 import { Servicedata } from './Servicedata';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Service = () => {
+   useEffect(() => {
+     Aos.init({ duration: 2000, easing: 'ease-in-sine', delay: 100 });
+   }, []);
   return (
     <Wrapper id="skills">
       <Innerlayouts>
         <div className="contents">
-          <h1 className="title">Services that connect you to your users</h1>
-          <div className="cardcontainer">
+          <h1 data-aos="fade-right" className="title">
+            Services that connect you to your users
+          </h1>
+          <div data-aos="zoom-out-up" className="cardcontainer">
             {Servicedata.map((item, index) => {
               return (
                 <Servicecard
-                 key={index}
+                  key={index}
                   img={item.img}
                   header={item.header}
                   para={item.para}

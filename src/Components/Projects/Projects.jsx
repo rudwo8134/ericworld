@@ -1,14 +1,21 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout'
 import Projectlistbox from './Projectlistbox';
 import { Projectdata } from './Projectdata';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 const Projects = () => {
+    useEffect(() => {
+      Aos.init({ duration: 2000, easing: 'ease-in-sine', delay: 100 });
+    }, []);
   return (
     <Wrapper>
       <Innerlayouts>
-        <h1 className="header">Project List</h1>
-        <div className="projectcontainer">
+        <h1 data-aos="fade-right" className="header">
+          Project List
+        </h1>
+        <div data-aos="zoom-in-down" className="projectcontainer">
           {Projectdata.map((item, index) => {
             return (
               <Projectlistbox
