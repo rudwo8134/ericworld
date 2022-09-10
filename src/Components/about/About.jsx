@@ -23,7 +23,7 @@ const About = () => {
             </h1>
             <div data-aos="fade-left" className="paragraph">
               I can make a website with those technology. I prefer to use React
-              library when I develop the website on Front-end-side.
+              library when I develop the website on Front-end-side.d
             </div>
           </div>
           <div data-aos="zoom-out-down" className="right">
