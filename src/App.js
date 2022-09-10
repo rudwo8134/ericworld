@@ -2,43 +2,43 @@ import {Switch,Route} from 'react-router-dom'
 import Layout from './Components/Layouts/Layout';
 import Homepage from './Pages/Homepage';
 import {Helmet} from 'react-helmet'
-import CardPicture from './assets/intro/CardPicture.jpg'
+import { SEO } from './constant/SEO';
 
 function App() {
   return (
     <>
       <Helmet>
-        <title>Eric's World</title>
+        <title>{SEO.title}</title>
         <meta
           name="description"
-          content="Eric's portfolio site. you can get all of info about Eric Shin. Eric Shin is Full-Stack Developer"
+          content={SEO.description}
         />
         <meta
           name="keywords"
-          content="Eric, eric, Portfolio, Full-Stack, Developer, Front-End"
+          content={SEO.keyword}
         />
-        <meta name="twitter:card" content="Eric's portfolio site" />
-        <meta name="twitter:site" content="@EricWorld" />
-        <meta name="twitter:title" content="Eric's World" />
+        <meta name="twitter:card" content={SEO.card} />
+        <meta name="twitter:site" content={SEO.site} />
+        <meta name="twitter:title" content={SEO.title} />
         <meta
           name="twitter:description"
-          content="Eric's portfolio site. you can get all of info about Eric Shin. Eric Shin is Full-Stack Developer"
+          content={SEO.description}
         />
-        <meta name="twitter:image" content={CardPicture} />
+        <meta name="twitter:image" content={SEO.image} />
 
-        <meta property="og:title" content="Eric's World" />
+        <meta property="og:title" content={SEO.title} />
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content="https://rudwo8134.github.io/ericworld/#/"
+          content={SEO.url}
         />
-        <meta property="og:image" content={CardPicture} />
+        <meta property="og:image" content={SEO.image} />
         <meta
           property="og:description"
-          content="Eric's portfolio site. you can get all of info about Eric Shin. Eric Shin is Full-Stack Developer"
+          content={SEO.description}
         />
-        <meta property="og:site_name" content="Eric's World" />
-        <meta property="fb:admins" content="rudwo8134" />
+        <meta property="og:site_name" content={SEO.title} />
+        <meta property="fb:admins" content={SEO.admins} />
       </Helmet>
       <Layout>
         <Switch>
