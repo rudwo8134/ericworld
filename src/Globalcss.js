@@ -27,6 +27,32 @@ const Globalcss = createGlobalStyle`
 
       
       }  
+      *{
+        cursor: none;
+      }
+      .cursor-dot-outline,
+      .cursor-dot{
+        pointer-events: none;
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        opacity:1 ;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+      .cursor-dot{
+        width:16px;
+        height:16px;
+        background-color:#277bc0;
+      }
+      .cursor-dot-outline
+      {
+        width:60px;
+      height:60px;
+      background-color:rgba(92, 184, 228, 0.5)
+      }
       *,
       body{
         margin: 0;
