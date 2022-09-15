@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import { Innerlayouts } from '../../Layoutcomponents/Innerlayout';
-import Eric from '../../assets/intro/ericshin 1.png'
+import MainCard from '../../assets/intro/CardPicture.jpg'
 import Halfcircle1 from '../../assets/intro/Half Circle 1.png'
 import Halfcircle2 from '../../assets/intro/Half Circle 3.png';
 import Aos from 'aos';
@@ -16,7 +16,7 @@ const Intro = () => {
       <Innerlayouts>
         <Wrapper>
           <div data-aos="zoom-in-down" className="left">
-            <img src={Eric} alt="profile" className="eric" />
+            <img src={MainCard} alt="profile" className="eric" />
           </div>
           <div className="right">
             <h1 data-aos="fade-right" className="title">
@@ -88,11 +88,13 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     img {
+      width: 450px;
+      height: 600px;
       border-radius: 50%;
-      margin-right: 5rem;
+      margin-right: 10rem;
       @media screen and (max-width: 768px) {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 300px;
       }
       @media screen and (max-width: 480px) {
         width: 200px;
@@ -125,8 +127,8 @@ const Wrapper = styled.div`
       }
       @media screen and (max-width: 480px) {
         font-size: 2rem;
-        margin:16px auto;
-        text-align:center;
+        margin: 16px auto;
+        text-align: center;
       }
     }
     .paragraph {
